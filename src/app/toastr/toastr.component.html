@@ -1,0 +1,14 @@
+<div class="notifications">
+	<div class="wrapper {{note.type}}" *ngFor="let note of _notes">
+		<ng-container *ngIf="note.html; else withTitle">
+			<div [innerHTML]='note.html'></div>
+		</ng-container>
+		<ng-template #withTitle>
+			<div class="d-flex">
+				<div class="title">{{ note.title }}</div>
+				<div class="close-icon ml-auto" (click)="hide(note.id)">X</div>
+			</div>
+			{{ note.content }}
+		</ng-template>
+	</div>
+</div>

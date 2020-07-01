@@ -1,0 +1,47 @@
+.notifications {
+  right: 3%;
+  bottom: 70px;
+  position: fixed;
+}
+.notifications .wrapper {
+  border: 1px solid;
+  border-radius: 4px;
+  transition: transform 0.5s, opacity 0.3s, -webkit-transform 0.5s,
+    box-shadow 135ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16);
+  margin-bottom: 0.5em;
+  min-height: 3em;
+  padding: 1em;
+  text-align: left;
+  width: 300px;
+}
+.notifications .success {
+  background-color: rgb(187, 229, 179);
+  border-color: rgb(187, 229, 179);
+  color: rgb(80, 184, 60);
+}
+.notifications .error {
+  background-color: rgb(254, 173, 154);
+  border-color: rgb(254, 173, 154);
+  color: rgb(222, 54, 24);
+}
+.notifications .warn {
+  background-color: rgb(255, 234, 138);
+  border-color: rgb(255, 234, 138);
+  color: rgb(238, 194, 0);
+}
+.notifications .info {
+  background-color: rgb(180, 225, 250);
+  border-color: rgb(180, 225, 250);
+  color: rgb(0, 111, 187);
+}
+
+.notifications .wrapper .title {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.notifications .wrapper .close-icon {
+  cursor: pointer;
+}

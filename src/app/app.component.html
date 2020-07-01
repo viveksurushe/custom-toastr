@@ -1,0 +1,32 @@
+<div class="jumbotron">
+  <h1 class="display-4">Custom Toastr</h1>
+  <p class="lead">This is a simple project with custom toastr.</p>
+  <p>It is used to create a notification popup.</p>
+  <hr class="my-4">
+      <h3>Show method</h3>
+      <p>This will open popup notification and close after 5 millisecond</p>
+      <button (click)="showToastr('success')" class="btn btn-success btn-lg" role="button">Success</button>
+      <button (click)="showToastr('error')" class="btn btn-danger btn-lg ml-2" role="button">Error</button>
+      <button (click)="showToastr('info')" class="btn btn-info btn-lg ml-2" role="button">Info</button>
+      <button (click)="showToastr('warn')" class="btn btn-warning btn-lg ml-2" role="button">Warning</button>
+
+  <hr/>
+
+  <div class="row">
+    <div class="col-6">
+      <h3>Open method</h3>
+      <p>Open notification as it wont be close until you want, click on side close button to close notification popup</p>
+      <button (click)="openToastr('success')" class="btn btn-success btn-lg" role="button">Success</button>
+      <button (click)="openToastr('error')" class="btn btn-danger btn-lg ml-2" role="button">Error</button>
+      <button (click)="openToastr('info')" class="btn btn-info btn-lg ml-2" role="button">Info</button>
+      <button (click)="openToastr('warn')" class="btn btn-warning btn-lg ml-2" role="button">Warning</button>
+    </div>
+    <div class="col-6">
+      <h3>Close method</h3>
+      <p>Close notification when you want by calling function</p>
+      <button (click)="closeToastr()" class="btn btn-primary btn-lg">close</button>
+    </div>
+  </div>
+
+</div>
+<app-toastr></app-toastr>

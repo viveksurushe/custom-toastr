@@ -31,3 +31,5 @@ this.toastrService.show(TYPE, 'this is dummy content', 'Title')
 this.toasterId = this.toastrService.open(TYPE,'this is dummy content', 'Title');
 this.toastrService.close(this.toasterId);
 ```
+### Screenshot 
+![Toastr screenshot](https://github.com/viveksurushe/custom-toastr/blob/master/screenshot.png)
